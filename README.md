@@ -19,10 +19,18 @@ Make sure the `gradlew` script is executable:
 chmod +x ./gradlew
 ```
 
-Then you can run all tests with:
+Then you can run all JUnit tests with:
 
 ```sh
 ./gradlew test
+```
+
+### Running JaCoCo test report
+
+JaCoCo has been added to this project to measure test coverage. You can run it alongside the JUnit tests with:
+
+```sh
+./gradlew test jacocoTestReport
 ```
 
 ### Running with a specific Java version
@@ -34,3 +42,10 @@ If you encounter a similar issue, run the above command with a `JAVA_HOME` prefi
 ```sh
 JAVA_HOME=/usr/lib/jvm/java-17-temurin-jdk ./gradlew test
 ```
+
+## Test reports
+
+After running tests using `gradlew` as described above, test reports are generated as HTML pages. These pages include links to additional pages for specific parts of the test.
+
+You can view the main test report at `app/build/reports/tests/test/index.html`. \
+A JaCoCo specific test report is generated at `app/build/reports/jacoco/test/html/index.html`.
