@@ -187,19 +187,6 @@ Add descriptive messages to each test. Let me know where would I see these messa
 > - Rewrote [`AppTest.java`](../app/src/test/java/org/example/AppTest.java) — added a descriptive string as the last argument to every assertion
 > - Re-ran tests: all 40 still pass (`BUILD SUCCESSFUL`)
 
-Let me view the current test file to make the edits precisely:
-
-Viewed AppTest.java:1-290
-Edited AppTest.java
-
-Now let's confirm the tests still pass:
-
-Ran command: `JAVA_HOME=/usr/lib/jvm/java-17-temurin-jdk ./gradlew test 2>&1`
-
-All 40 tests still pass. ✅
-
----
-
 ## Where do the messages appear?
 
 In JUnit 5, the message you pass as the last argument to `assertEquals(...)`, `assertTrue(...)`, etc. is a **failure message** — it only surfaces when that specific assertion fails. Here's where you'll see it:
