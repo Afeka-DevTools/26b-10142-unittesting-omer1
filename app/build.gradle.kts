@@ -8,6 +8,8 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     application
+    // Code coverage reporting
+    jacoco
 }
 
 repositories {
@@ -18,6 +20,9 @@ repositories {
 dependencies {
     // Use JUnit Jupiter for testing.
     testImplementation(libs.junit.jupiter)
+
+    // Parameterized test support (@ParameterizedTest, @CsvSource, @MethodSource, etc.)
+    testImplementation("org.junit.jupiter:junit-jupiter-params:5.12.1")
 
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
@@ -40,4 +45,13 @@ application {
 tasks.named<Test>("test") {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
+}
+
+tasks.named<JacocoReport>("jacocoTestReport") {
+    // Ensure tests run before generating the report.
+    dependsOn(tasks.named("test"))
+    reports {
+        // Generate an HTML report viewable in a browser.
+        html.required = true
+    }
 }
