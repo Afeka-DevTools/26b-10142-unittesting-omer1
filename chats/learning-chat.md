@@ -465,10 +465,10 @@ _Notice how just two methods comprehensively test 8 different boundary and edge 
 
 - **Don't rely solely on Code Coverage:** Tools like JaCoCo will tell you if a line of code was _executed_ during a test, but it does not check if you actually _asserted_ the correct behavior. 100% line coverage means nothing if you have weak assertions.
 - **Follow the F.I.R.S.T. Principles:**
-- **F**ast: Tests should run in milliseconds so you can run them constantly.
-- **I**solated: Tests should not depend on the order in which they run, nor share state.
-- **R**epeatable: They should yield the same result locally, on a coworker's machine, and in the CI pipeline.
-- **S**elf-validating: They must output a boolean pass/fail. You shouldn't have to check a log file to see if it worked.
-- **T**imely: Write them just before or exactly alongside the production code.
+  - **F**ast: Tests should run in milliseconds so you can run them constantly.
+  - **I**solated: Tests should not depend on the order in which they run, nor share state.
+  - **R**epeatable: They should yield the same result locally, on a coworker's machine, and in the CI pipeline.
+  - **S**elf-validating: They must output a boolean pass/fail. You shouldn't have to check a log file to see if it worked.
+  - **T**imely: Write them just before or exactly alongside the production code.
 
 What kind of specific logic or application are you trying to write tests for right now?
