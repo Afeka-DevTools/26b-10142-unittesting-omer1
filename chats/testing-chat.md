@@ -11,7 +11,7 @@
 
 This project contains `App.java` which includes some functions I would like to write tests for. Write unit tests in `AppTest.java` using JUnit and its assert functions.
 
-🤖 **Claude Sonnet 4.6**
+🤖 **Claude**
 
 > **Actions taken**
 >
@@ -44,7 +44,7 @@ Here's a summary of the unit tests written in [AppTest.java](../app/src/test/jav
 
 My default Java version installed is Java 25. Check `/usr/lib/jvm/` as I believe I have an additional older version of Java that may solve this issue. If you find one, try to run the tests using it.
 
-🤖 **Claude Sonnet 4.6**
+🤖 **Claude**
 
 > **Actions taken**
 >
@@ -77,7 +77,7 @@ To avoid having to set `JAVA_HOME` manually each time, you can either:
 Explain how can I run these tests myself? Including using a specific Java version like you just did. \
 What should I expect to see when all tests pass? If some test fails?
 
-🤖 **Claude Sonnet 4.6**
+🤖 **Claude**
 
 ## Running the Tests
 
@@ -180,7 +180,7 @@ It tells you:
 
 Add descriptive messages to each test. Let me know where would I see these messages (`gradlew` output, reports, etc)?
 
-🤖 **Claude Sonnet 4.6**
+🤖 **Claude**
 
 > **Actions taken**
 >
@@ -233,7 +233,7 @@ Are the tests we have currently sufficient? Do they cover all possible execution
 
 In general, how can I determine if the tests are sufficient in my project?
 
-🤖 **Claude Sonnet 4.6**
+🤖 **Claude**
 
 > **Actions taken**
 >
@@ -286,7 +286,7 @@ Coverage only tells you _which lines ran_, not _whether your assertions would ca
 
 Add any missing tests you've found in your analysis.
 
-🤖 **Claude Sonnet 4.6**
+🤖 **Claude**
 
 > **Actions taken**
 >
@@ -316,7 +316,7 @@ The last test also caught something more interesting than initially predicted �
 I have previously learned about parameterized tests. Can these be implemented in `AppTest.java` to test various cases and reduce bloat? \
 If so, update `AppTest.java` with parameterized tests where possible.
 
-🤖 **Claude Sonnet 4.6**
+🤖 **Claude**
 
 > **Actions taken**
 >
