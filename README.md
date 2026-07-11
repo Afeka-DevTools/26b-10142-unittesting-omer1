@@ -37,7 +37,7 @@ JaCoCo has been added to this project to measure test coverage. You can run it a
 
 While working on this assignment, I have encountered an issue where the default Java version installed on my machine (25.0.3) was not compatible with the version of Gradle in this project (8.14).
 
-If you encounter a similar issue, run the above command with a `JAVA_HOME` prefix, pointing to your other Java install. For example:
+If you encounter a similar issue, install a compatible Java version - Java 17 or 21 are recommended. Then run the above command with a `JAVA_HOME` prefix, pointing to your other Java install. For example:
 
 ```sh
 JAVA_HOME=/usr/lib/jvm/java-17-temurin-jdk ./gradlew test
